@@ -1,0 +1,28 @@
+{
+  "name": "luster-consul-config",
+  "version": "0.1.0",
+  "description": "Luster extension that provides support for getting configuration from Consul K/V storage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nodules/luster-consul-config.git"
+  },
+  "keywords": [
+    "luster",
+    "consul",
+    "configuration"
+  ],
+  "author": "Vladimir Varankin <varankinv@yandex-team.ru> (http://github.com/narqo)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodules/luster-consul-config/issues"
+  },
+  "homepage": "https://github.com/nodules/luster-consul-config#readme",
+  "dependencies": {
+    "consul": "^0.24.0",
+    "lodash": "^4.6.1"
+  }
+}

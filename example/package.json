@@ -1,0 +1,12 @@
+{
+  "name": "luster-consul-config-example",
+  "main": "worker.js",
+  "scripts": {
+    "start": "luster luster.conf.json"
+  },
+  "dependencies": {
+    "lodash": "^4.6.1",
+    "luster": "^0.6.2",
+    "luster-consul-config": "file:../"
+  }
+}
