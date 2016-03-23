@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  webapp:
+    build: .
+    ports:
+      - 10080:10080
+    links:
+      - consul
+
+  consul:
+    image: progrium/consul:latest
+    command: -server -bootstrap -ui-dir /ui
+    hostname: node1
+    restart: always
+    mem_limit: 128m
+    ports:
+      - 8500:8500
+    expose:
+      - 53
+      - 8400
+      - 8500

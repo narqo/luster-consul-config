@@ -4,7 +4,7 @@ var assert = require('assert'),
 
 if (typeof luster.consulConfig === 'function') {
     luster.consulConfig(function(cfgData) {
-        console.log('got new data: %j', cfgData);
+        console.log('update configuration: %j', cfgData);
         config.merge(cfgData);
     });
 }
