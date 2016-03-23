@@ -1,11 +1,21 @@
 # luster-consul-config
 
+An extension for [luster](https://www.npmjs.com/package/luster) that provides support for getting
+configuration from [Consul](https://www.consul.io/) K/V storage.
+
 ## Usage
 
-Add `luster-consul-config` to list of your luster extensions:
+Install extension module to application:
+
+~~~
+$ npm install --save luster-consul-config
+~~~
+
+Add `luster-consul-config` to the list of your luster extensions:
 
 ~~~
 // luster.conf.json
+
 {
   "app": "worker.js",
   ···
@@ -13,7 +23,7 @@ Add `luster-consul-config` to list of your luster extensions:
     "luster-consul-config": {
       "namespace": "settings/example/",
       "connection": {
-        "host": "192.168.99.100",
+        "host": "127.0.0.1",
         "port": 8500
       }
     }
@@ -41,8 +51,13 @@ See `example/` for complete example.
 
 ## Configuration
 
-- `namespace String`
-- `connection Object`
+- `namespace` - prefix of keys; this prefix will be stripped from config;
+- `connection` - Consul agent connection details; see [node-consul](https://www.npmjs.com/package/consul).
+
+## Contribution and Feedback
+
+Contributing is more than welcome. Create an issue if you see any problem in the code or send a PR with
+fixes if you'd like.
 
 ## License
 
