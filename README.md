@@ -52,6 +52,8 @@ See `example/` for complete example.
 ## Configuration
 
 - `namespace` - prefix of keys; this prefix will be stripped from config;
+- `cacheFile` - optional file path to store successfully loaded configuration. Config could be restored from this file
+  in case of temporal downtimes of the Consul agent;
 - `connection` - Consul agent connection details; see [node-consul](https://www.npmjs.com/package/consul).
 
 ## Contribution and Feedback
