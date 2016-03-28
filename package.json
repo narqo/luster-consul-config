@@ -23,6 +23,7 @@
   "homepage": "https://github.com/nodules/luster-consul-config#readme",
   "dependencies": {
     "consul": "^0.24.0",
+    "debug-flags": "0.0.1",
     "lodash": "^4.6.1"
   }
 }
