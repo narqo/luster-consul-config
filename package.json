@@ -1,6 +1,6 @@
 {
   "name": "luster-consul-config",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Luster extension that provides support for getting configuration from Consul K/V storage",
   "main": "index.js",
   "scripts": {
